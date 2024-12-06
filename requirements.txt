@@ -1,0 +1,3 @@
+Flask==2.0.2
+Flask-OAuthlib==0.9.5
+stripe==2.56.0

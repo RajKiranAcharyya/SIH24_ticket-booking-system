@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticket Booking System</title>
+</head>
+
+<body>
+    <h2>Welcome to the Ticket Booking System</h2>
+
+    <div>
+        <label for="num_tickets">Enter number of tickets to book:</label>
+        <input type="number" id="num_tickets" min="1" max="10">
+        <button onclick="bookTicket()">Book Ticket</button>
+    </div>
+
+    <h3 id="response"></h3>
+
+    <script>
+        let availableSeats = 100;
+
+        function bookTicket() {
+            let numTickets = document.getElementById("num_tickets").value;
+            if (numTickets <= availableSeats) {
+                availableSeats -= numTickets;
+                document.getElementById("response").innerHTML = `Successfully booked ${numTickets} tickets. Available seats: ${availableSeats}`;
+            } else {
+                document.getElementById("response").innerHTML = `Not enough seats. Only ${availableSeats} seats available.`;
+            }
+        }
+    </script>
+</body>
+
+</html>
