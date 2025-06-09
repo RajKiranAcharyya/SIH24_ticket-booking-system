@@ -59,17 +59,6 @@ By leveraging modern technologies, the system offers dynamic pricing models base
 - Stripe is embedded to facilitate quick, secure payments.
 - Supports multiple payment options including credit/debit cards and digital wallets.
 
-## Repository Structure
-
-├── index.html               # Main frontend HTML page
-├── style.css                # Styling for the frontend
-├── script.js                # JavaScript for frontend interactivity and chatbot
-├── ticket_booking_system.py # Backend logic for ticket booking
-├── user_authentication.py   # Handles OAuth 2.0 login and user sessions
-├── payment_integration.py   # Stripe payment gateway integration
-├── requirements.txt         # Python dependencies
-├── SIH24_Ticket-booking-system.pdf # Project documentation/portal submission
-
 ## Getting Started
 
 Follow these steps to run the project locally:
